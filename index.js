@@ -12,7 +12,7 @@ var corsOptions = { // CORS 옵션
     // origin: 'http://localhost:5500', // 클라이언트 주소
     credentials: true
 }
-const CONNECT_URL = 'mongodb+srv://bootuser:bootuser@cluster0.fqsii.mongodb.net' // DB 이름 변경하기
+const CONNECT_URL = 'mongodb+srv://bootuser:bootuser@cluster0.fqsii.mongodb.net/kor_dic_db?retryWrites=true&w=majority' // DB 이름 변경하기
 mongoose.connect(CONNECT_URL, { // Mongo DB 서버 연결
     useNewUrlParser: true,
     useUnifiedTopology: true
